@@ -1,0 +1,19 @@
+Hi there,
+
+I just wanted to suggest maybe a dividing-gold-iii where every time the captain kills someone they reconsider mutiny
+
+I know you had the "priority for checking cases" but I still thought this would work:
+
+def winner_share(gold: int, sailors: int) -> int:
+
+    if sailors == 0:
+        return gold
+    elif gold % (sailors + 2) == 0:
+        return gold/(sailors + 2) * 2
+    elif gold % sailors == 0:
+        return gold/sailors
+    else:
+        winner_share(gold, sailors - 1)
+
+Because I did initially think that they'd reconsider mutiny after every death
+and not that the captain would just keep killing until the math mathed.
