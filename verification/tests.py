@@ -60,5 +60,9 @@ TESTS = {
             "input": [10, 0],
             "answer": 10,
         },
+        {
+            "input": [11, 0],
+            "answer": 11
+        },
     ]
 }
